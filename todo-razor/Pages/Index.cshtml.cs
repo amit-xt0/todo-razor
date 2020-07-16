@@ -12,6 +12,7 @@ namespace todo_razor.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public string Name { get; set; }
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -19,7 +20,7 @@ namespace todo_razor.Pages
 
         public void OnGet()
         {
-
+            this.Name = "John";
         }
     }
 }
